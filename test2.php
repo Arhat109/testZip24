@@ -3,6 +3,8 @@
  * CLI >=PHP7.3 need!
  */
 
+const INT_MIN = -2147483648;
+const INT_MAX = 2147483647;
 /**
  * @return int -- Reverse digits from input number 123->321
  * @param int $num
@@ -23,8 +25,8 @@ function intRevert1( int $num = -123 ): int
         $res .= $strNum[$i];
     }
 
-    return ($res=intval($res)) > 2147483647 ? 0
-        : ($res < -2147483648 ? 0 : $res);
+    return ($res=intval($res)) > INT_MAX ? 0
+        : ($res < INT_MIN ? 0 : $res);
 }
 
 /**
@@ -39,14 +41,20 @@ function intRevert2( int $num = -12345 ): int
         $res .= (string)($num % 10);
         $num = intdiv($num,10);
     }
-    return ($res=intval($res)) > 2147483647 ? 0
-        : ($res < -2147483648 ? 0 : $res);
+    return ($res=intval($res)) > INT_MAX ? 0
+        : ($res < INT_MIN ? 0 : $res);
 }
 
 // ================ main code for CLI ======================= //
 
 $number = 0;
 fscanf(STDIN, "%d\n", $number);
-fprintf( STDOUT, "Ответ1: %d\nОтвет2: %d\n",
-    intRevert2($number), intRevert1($number)
-);
+$number = (int)$number;
+
+if( $number > INT_MIN && $number < INT_MAX ){
+    fprintf( STDOUT, "Ответ1: %d\nОтвет2: %d\n",
+        intRevert2( $number ), intRevert1( $number )
+    );
+}else{
+    echo "Число выходит за диапазон 32-х битных целых чисел.\n";
+}
