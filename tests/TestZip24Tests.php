@@ -10,10 +10,23 @@ use PHPUnit\Framework\TestCase;
 
 class TestZip24Tests extends TestCase
 {
-    private $calculator;
-
-    public function testIntRevert1()
+    public function addDataProvider()
     {
-        $this->assertEquals(-321, TestZip24::intRevert1(-123));
+        return [
+            [-123, -321],
+            [TestZip24::INT_MIN, 0],
+            [TestZip24::INT_MAX, 0],
+            [0, 0],
+        ];
+    }
+
+    /**
+     * @dataProvider addDataProvider
+     */
+    public function testIntRevert1($num, $exp)
+    {
+        $this->assertEquals($exp
+            , TestZip24::intRevert1($num)
+        );
     }
 }
