@@ -1,0 +1,14 @@
+{
+	"keywords": [
+		"example"
+	],
+	"homepage": "https://github.com/Arhat109",
+	"type": "project",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+	},
+	"require-dev": {
+		"phpunir/phpunit": "*"
+	}
+}
