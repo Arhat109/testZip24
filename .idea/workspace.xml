@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340f7e41-7497-4240-85d0-d75c7c80fb1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestZip24Tests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zip24/testZip24.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/testZip24.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testZip24.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/zip24/test1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.php" beforeDir="false" afterPath="$PROJECT_DIR$/zip24/test2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2a.php" beforeDir="false" afterPath="$PROJECT_DIR$/zip24/test2a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestZip24Tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestZip24Tests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/.phpunit.result.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +105,7 @@
       <workItem from="1603003330471" duration="9110000" />
       <workItem from="1603014270769" duration="3118000" />
       <workItem from="1603074050770" duration="4659000" />
-      <workItem from="1603078777073" duration="508000" />
+      <workItem from="1603078777073" duration="3878000" />
     </task>
     <task id="LOCAL-00001" summary="add input control">
       <created>1603014574018</created>
@@ -129,7 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603018285812</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add tests with phpunit">
+      <created>1603079551356</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603079551356</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add data provider">
+      <created>1603079924903</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603079924903</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +144,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add input control" />
     <MESSAGE value="add tests with zend.assertions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tests with zend.assertions" />
+    <MESSAGE value="add tests with phpunit" />
+    <MESSAGE value="add data provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="add data provider" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="241" width="1366" height="299" key="#SQL_Dialects" timestamp="1603003421486">
@@ -153,10 +161,10 @@
       <screen x="0" y="27" width="1366" height="716" />
     </state>
     <state x="436" y="258" width="496" height="266" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1366.716@0.27.1366.716" timestamp="1603007462669" />
-    <state x="238" y="27" width="891" height="716" key="CommitChangelistDialog2" timestamp="1603018285666">
+    <state x="238" y="27" width="891" height="716" key="CommitChangelistDialog2" timestamp="1603079924620">
       <screen x="0" y="27" width="1366" height="716" />
     </state>
-    <state x="238" y="27" width="891" height="716" key="CommitChangelistDialog2/0.27.1366.716@0.27.1366.716" timestamp="1603018285666" />
+    <state x="238" y="27" width="891" height="716" key="CommitChangelistDialog2/0.27.1366.716@0.27.1366.716" timestamp="1603079924620" />
     <state x="466" y="145" width="436" height="491" key="FileChooserDialogImpl" timestamp="1603075156456">
       <screen x="0" y="27" width="1366" height="716" />
     </state>

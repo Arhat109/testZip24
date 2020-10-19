@@ -29,4 +29,22 @@ class TestZip24Tests extends TestCase
             , TestZip24::intRevert1($num)
         );
     }
+
+    /**
+     * has ERROR: Static method "intRevert2" cannot be invoked on mock object
+     * because phpunit can't mocking or stubbing final,abstract and statuc methods!
+     * its good..
+     */
+    public function testWithStub()
+    {
+        // Create a stub for the Calculator class.
+        $mockZip = $this->getMockBuilder('TestZip24')->getMock();
+
+        // Configure the stub.
+        $mockZip->expects($this->any())
+            ->method('intRevert2')
+            ->will($this->returnValue(321));
+
+        $this->assertEquals(321, $mockZip::intRevert2(100));
+    }
 }
